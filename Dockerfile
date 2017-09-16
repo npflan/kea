@@ -14,4 +14,4 @@ RUN mkdir -p /var/run/kea
 
 EXPOSE 67/udp 67/tcp 68/udp 68/tcp
 
-CMD kea-ctrl-agent -c /etc/kea-ca.conf && kea-dhcp4 -c /etc/kea.conf
+CMD kea-dhcp4 -c /etc/kea.conf
