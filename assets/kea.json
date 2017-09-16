@@ -4025,14 +4025,14 @@
    "lease-database": {
       "type": "postgresql",
       "name": "kea",
-      "host": "postgres",
+      "host": "postgres.dhcp.svc.cluster.local",
       "user": "npf",
       "password": "npflocal"
     },
     "hosts-database": {
       "type": "postgresql",
       "name": "kea",
-      "host": "postgres",
+      "host": "postgres.dhcp.svc.cluster.local",
       "user": "npf",
       "password": "npflocal"
     }
