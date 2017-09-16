@@ -4022,7 +4022,7 @@
         ]
       }
     ],
-    "lease-database": {
+   "lease-database": {
       "type": "postgresql",
       "name": "kea",
       "host": "postgres",
