@@ -4813,7 +4813,7 @@
           }
         ],
         "relay": {
-          "ip-address": "10.255.254.193"
+          "ip-address": "10.248.0.1"
         },
         "option-data": [
           {
