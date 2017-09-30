@@ -1,9 +1,28 @@
-FROM gcr.io/google-containers/ubuntu-slim:0.14
+FROM alpine:latest
 MAINTAINER NPFLAN
 
-RUN apt-get update
-RUN apt-get install -y kea-dhcp4-server python && \
-mkdir -p /var/run/kea
+RUN apk update && \
+    apk add procps alpine-sdk git autoconf automake libressl libressl-dev boost-dev libtool pkgconfig postgresql postgresql-dev && \
+    cd /tmp && \
+    git clone -b 1.2.x https://github.com/log4cplus/log4cplus.git && \
+    cd log4cplus && \
+    git submodule update --init --recursive && \
+    autoreconf && \
+    ./configure && \
+    make && \
+    make install && \
+    cd /tmp && \
+    git clone https://github.com/isc-projects/kea.git && \
+    cd kea && \
+    autoreconf --install && \
+    ./configure --with-dhcp-pgsql && \
+    make && \
+    make install && \
+    rm -rf /tmp/* && \
+    apk del alpine-sdk git autoconf automake pkgconfig && \
+    rm -rf /var/cache/apk/*
+
+RUN mkdir -p /var/run/kea
 
 ADD assets /etc/
 ADD assets/kea.json /etc/kea.conf
