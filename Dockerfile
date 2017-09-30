@@ -1,8 +1,8 @@
-FROM gcr.io/google-containers/ubuntu-slim:0.14
+FROM base/archlinux:latest
 MAINTAINER NPFLAN
 
-RUN apt-get update
-RUN apt-get install -y kea-dhcp4-server python && \
+RUN pacman --noconfirm -Syyu
+RUN pacman -S --noconfirm kea python && \
 mkdir -p /var/run/kea
 
 ADD assets /etc/
