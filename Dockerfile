@@ -1,13 +1,11 @@
-FROM base/archlinux:latest
+FROM alpine:3.8
 MAINTAINER NPFLAN
 
-RUN pacman --noconfirm -Syyu
-RUN pacman -S --noconfirm kea python && \
-mkdir -p /var/run/kea
-
-ADD assets /etc/
-ADD assets/kea.json /etc/kea.conf
+RUN apk add --no-cache \
+ -X http://dl-4.alpinelinux.org/alpine/edge/testing \
+ -X http://dl-4.alpinelinux.org/alpine/edge/main \
+ kea kea-dhcp4 kea-keactrl
 
 EXPOSE 67/udp 67/tcp 68/udp 68/tcp
 
-CMD kea-dhcp4 -c /etc/kea.conf
+ENTRYPOINT ["kea-dhcp4", "-c", "/etc/kea/kea-dhcp4.conf"]

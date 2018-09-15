@@ -1,0 +1,39 @@
+apiVersion: v1
+data:
+  kea-dhcp4.conf: |-
+    {
+      "Dhcp4": {
+          "interfaces-config": {
+              "interfaces": [ "eth0" ],
+              # https://kea.isc.org/docs/kea-guide.html#dhcpinform-unicast-issues
+              "dhcp-socket-type": "udp",
+              "outbound-interface": "use-routing"
+          },
+          "option-data": [
+            {
+              "name": "domain-name-servers",
+              "data": "10.96.5.1, 10.96.5.2"
+            }
+          ],
+          "valid-lifetime": 10800,
+          "renew-timer": 3600,
+          "rebind-timer": 7200,
+          <?include "/kea/subnet/subnet.conf"?>,
+          "lease-database": {
+            "type": "memfile",
+            "persist": true,
+            "name": "/var/kea/dhcp4.leases"
+          }
+      },
+      "Logging": {
+        "loggers": [{
+              "name": "*",
+              "severity": "DEBUG"
+          }]
+      }
+    }
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: kea
+  namespace: dhcp
