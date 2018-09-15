@@ -1,0 +1,84 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: dhcp-primary
+  namespace: dhcp
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: dhcp-primary
+    spec:
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchExpressions:
+                  - key: "app"
+                    operator: In
+                    values:
+                    - dhcp-primary
+                    - dhcp-secondary
+              topologyKey: "kubernetes.io/hostname"
+      hostname: primary
+      subdomain: dhcp-pod
+      containers:
+      - name: dhcpd
+        image: npflan/kea:rework
+        command: ["kea-dhcp4"]
+        args: ["-c", "/kea/config/kea-dhcp4.conf"]
+        volumeMounts:
+          - mountPath: /kea/subnet
+            name: subnet
+          - mountPath: /kea/config
+            name: kea
+          - mountPath: /var/kea/
+            name: backend
+        resources:
+          limits:
+            memory: 1024M
+      volumes:
+        - name: subnet
+          configMap:
+            name: keasubnet
+            items:
+            - key: subnet.conf
+              path: subnet.conf
+        - name: kea
+          configMap:
+            name: kea
+            items:
+            - key: kea-dhcp4.conf
+              path: kea-dhcp4.conf
+        - name: backend
+          persistentVolumeClaim:
+            claimName: kea-primary-claim
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: dhcp-primary
+  namespace: dhcp
+spec:
+  clusterIP: 10.96.6.1
+  selector:
+    app: dhcp-primary
+  ports:
+    - name: dhcp
+      protocol: UDP
+      port: 67
+      targetPort: 67
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: kea-primary-claim
+  namespace: dhcp
+spec:
+  storageClassName: local-storage
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
