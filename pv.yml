@@ -1,17 +1,17 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: chimera-pv
+  name: kea-primary-pv
 spec:
   capacity:
-    storage: 100Gi
+    storage: 20Gi
   volumeMode: Filesystem
   accessModes:
   - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: local-storage
+  storageClassName: dhcp
   local:
-    path: /var/kubelocal
+    path: /kube/6d8c59a5-8b75-4a6c-80b8-973d79bf21fe
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -24,17 +24,17 @@ spec:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: archon-pv
+  name: kea-secondary-pv
 spec:
   capacity:
-    storage: 100Gi
+    storage: 20Gi
   volumeMode: Filesystem
   accessModes:
   - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: local-storage
+  storageClassName: dhcp
   local:
-    path: /var/kubelocal
+    path: /kube/6d8c59a5-8b75-4a6c-80b8-973d79bf21fe
   nodeAffinity:
     required:
       nodeSelectorTerms:
