@@ -1,6 +1,6 @@
 apiVersion: v1
 data:
-  kea-dhcp4.conf: |-
+  primary.conf: |-
     {
       "Dhcp4": {
           "interfaces-config": {
@@ -23,7 +23,137 @@ data:
             "type": "memfile",
             "persist": true,
             "name": "/var/kea/dhcp4.leases"
+          },
+          "control-socket": {
+              "socket-type": "unix",
+              "socket-name": "/kea/socket/control"
+          },
+          "hooks-libraries": [
+            {
+              "library": "/usr/lib/hooks/libdhcp_lease_cmds.so",
+              "parameters": { }
+            },
+            {
+              "library": "/usr/lib/hooks/libdhcp_ha.so",
+              "parameters": {
+                "high-availability": [
+                  {
+                    "this-server-name": "primary",
+                    "mode": "hot-standby",
+                    "heartbeat-interval": 10,
+                    "max-response-delay": 60,
+                    "max-ack-delay": 10,
+                    "max-unacked-messages": 10,
+                    "peers": [
+                        {
+                            "name": "primary",
+                            "url": "http://10.96.6.1:8080/",
+                            "role": "primary",
+                            "auto-failover": true
+                        },
+                        {
+                            "name": "secondary",
+                            "url": "http://10.96.6.2:8080/",
+                            "role": "standby",
+                            "auto-failover": true
+                        }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+      },
+      "Control-agent": {
+        "http-host": "0.0.0.0",
+        "http-port": 8080,
+        "control-sockets": {
+          "dhcp4": {
+              "socket-type": "unix",
+              "socket-name": "/kea/socket/control"
           }
+        }
+      },
+      "Logging": {
+        "loggers": [{
+              "name": "*",
+              "severity": "DEBUG"
+          }]
+      }
+    }
+  secondary.conf: |-
+    {
+      "Dhcp4": {
+          "interfaces-config": {
+              "interfaces": [ "eth0" ],
+              # https://kea.isc.org/docs/kea-guide.html#dhcpinform-unicast-issues
+              "dhcp-socket-type": "udp",
+              "outbound-interface": "use-routing"
+          },
+          "option-data": [
+            {
+              "name": "domain-name-servers",
+              "data": "10.96.5.1, 10.96.5.2"
+            }
+          ],
+          "valid-lifetime": 10800,
+          "renew-timer": 3600,
+          "rebind-timer": 7200,
+          <?include "/kea/subnet/subnet.conf"?>,
+          "lease-database": {
+            "type": "memfile",
+            "persist": true,
+            "name": "/var/kea/dhcp4.leases"
+          },
+          "control-socket": {
+              "socket-type": "unix",
+              "socket-name": "/kea/socket/control"
+          },
+          "hooks-libraries": [
+            {
+              "library": "/usr/lib/hooks/libdhcp_lease_cmds.so",
+              "parameters": { }
+            },
+            {
+              "library": "/usr/lib/hooks/libdhcp_ha.so",
+              "parameters": {
+                "high-availability": [
+                  {
+                    "this-server-name": "secondary",
+                    "mode": "hot-standby",
+                    "heartbeat-interval": 10,
+                    "max-response-delay": 60,
+                    "max-ack-delay": 10,
+                    "max-unacked-messages": 10,
+                    "peers": [
+                        {
+                            "name": "primary",
+                            "url": "http://10.96.6.1:8080/",
+                            "role": "primary",
+                            "auto-failover": true
+                        },
+                        {
+                            "name": "secondary",
+                            "url": "http://10.96.6.2:8080/",
+                            "role": "standby",
+                            "auto-failover": true
+                        }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+      },
+      "Control-agent": {
+        "http-host": "0.0.0.0",
+        "http-port": 8080,
+        "control-sockets": {
+          "dhcp4": {
+              "socket-type": "unix",
+              "socket-name": "/kea/socket/control"
+          }
+        }
       },
       "Logging": {
         "loggers": [{
