@@ -25,7 +25,7 @@ spec:
       subdomain: dhcp-pod
       containers:
       - name: dhcpd
-        image: npflan/kea:rework
+        image: npflan/kea:npf2018
         command: ["kea-dhcp4"]
         args: ["-c", "/kea/config/kea-dhcp4.conf"]
         volumeMounts:
@@ -35,10 +35,28 @@ spec:
             name: kea
           - mountPath: /var/kea/
             name: backend
+          - mountPath: /kea/socket
+            name: socket
         resources:
           limits:
             memory: 1024M
+      - name: dhcpd-control
+        image: npflan/kea:npf2018
+        command: ["kea-ctrl-agent"]
+        args: ["-c", "/kea/config/kea-dhcp4.conf"]
+        volumeMounts:
+          - mountPath: /kea/subnet
+            name: subnet
+          - mountPath: /kea/config
+            name: kea
+          - mountPath: /kea/socket
+            name: socket
+        resources:
+          limits:
+            memory: 256M
       volumes:
+        - name: socket
+          emptyDir: {}
         - name: subnet
           configMap:
             name: keasubnet
@@ -49,11 +67,86 @@ spec:
           configMap:
             name: kea
             items:
-            - key: kea-dhcp4.conf
+            - key: primary.conf
               path: kea-dhcp4.conf
         - name: backend
           persistentVolumeClaim:
             claimName: kea-primary-claim
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: dhcp-secondary
+  namespace: dhcp
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: dhcp-secondary
+    spec:
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchExpressions:
+                  - key: "app"
+                    operator: In
+                    values:
+                    - dhcp-primary
+                    - dhcp-secondary
+              topologyKey: "kubernetes.io/hostname"
+      hostname: secondary
+      subdomain: dhcp-pod
+      containers:
+      - name: dhcpd
+        image: npflan/kea:npf2018
+        command: ["kea-dhcp4"]
+        args: ["-c", "/kea/config/kea-dhcp4.conf"]
+        volumeMounts:
+          - mountPath: /kea/subnet
+            name: subnet
+          - mountPath: /kea/config
+            name: kea
+          - mountPath: /var/kea/
+            name: backend
+          - mountPath: /kea/socket
+            name: socket
+        resources:
+          limits:
+            memory: 1024M
+      - name: dhcpd-control
+        image: npflan/kea:npf2018
+        command: ["kea-ctrl-agent"]
+        args: ["-c", "/kea/config/kea-dhcp4.conf"]
+        volumeMounts:
+          - mountPath: /kea/subnet
+            name: subnet
+          - mountPath: /kea/config
+            name: kea
+          - mountPath: /kea/socket
+            name: socket
+        resources:
+          limits:
+            memory: 256M
+      volumes:
+        - name: socket
+          emptyDir: {}
+        - name: subnet
+          configMap:
+            name: keasubnet
+            items:
+            - key: subnet.conf
+              path: subnet.conf
+        - name: kea
+          configMap:
+            name: kea
+            items:
+            - key: secondary.conf
+              path: kea-dhcp4.conf
+        - name: backend
+          persistentVolumeClaim:
+            claimName: kea-secondary-claim   
 ---
 kind: Service
 apiVersion: v1
@@ -69,6 +162,29 @@ spec:
       protocol: UDP
       port: 67
       targetPort: 67
+    - name: control
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: dhcp-secondary
+  namespace: dhcp
+spec:
+  clusterIP: 10.96.6.2
+  selector:
+    app: dhcp-secondary
+  ports:
+    - name: dhcp
+      protocol: UDP
+      port: 67
+      targetPort: 67
+    - name: control
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -81,4 +197,17 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 20Gi
+      storage: 5Gi
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: kea-secondary-claim
+  namespace: dhcp
+spec:
+  storageClassName: dhcp
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
