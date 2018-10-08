@@ -28,6 +28,9 @@ spec:
         image: npflan/kea:npf2018
         command: ["kea-dhcp4"]
         args: ["-c", "/kea/config/kea-dhcp4.conf"]
+        env:
+        - name: KEA_PIDFILE_DIR
+          value: "/kea/run"
         volumeMounts:
           - mountPath: /kea/subnet
             name: subnet
@@ -37,6 +40,8 @@ spec:
             name: backend
           - mountPath: /kea/socket
             name: socket
+          - mountPath: /kea/run
+            name: run
         resources:
           limits:
             memory: 1024M
@@ -56,6 +61,8 @@ spec:
             memory: 256M
       volumes:
         - name: socket
+          emptyDir: {}
+        - name: run
           emptyDir: {}
         - name: subnet
           configMap:
@@ -103,6 +110,9 @@ spec:
         image: npflan/kea:npf2018
         command: ["kea-dhcp4"]
         args: ["-c", "/kea/config/kea-dhcp4.conf"]
+        env:
+        - name: KEA_PIDFILE_DIR
+          value: "/kea/run"
         volumeMounts:
           - mountPath: /kea/subnet
             name: subnet
@@ -112,6 +122,8 @@ spec:
             name: backend
           - mountPath: /kea/socket
             name: socket
+          - mountPath: /kea/run
+            name: run
         resources:
           limits:
             memory: 1024M
@@ -131,6 +143,8 @@ spec:
             memory: 256M
       volumes:
         - name: socket
+          emptyDir: {}
+        - name: run
           emptyDir: {}
         - name: subnet
           configMap:
