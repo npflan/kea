@@ -9,8 +9,6 @@ spec:
     metadata:
       labels:
         app: dhcp-primary
-        prometheus.io/scrape: "true"
-        prometheus.io/port: "9405"
     spec:
       affinity:
         podAntiAffinity:
@@ -98,8 +96,6 @@ spec:
     metadata:
       labels:
         app: dhcp-secondary
-        prometheus.io/scrape: "true"
-        prometheus.io/port: "9405"
     spec:
       affinity:
         podAntiAffinity:
@@ -181,6 +177,9 @@ apiVersion: v1
 metadata:
   name: dhcp-primary
   namespace: dhcp
+  annotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "9405"
 spec:
   clusterIP: 10.96.6.1
   selector:
@@ -200,6 +199,9 @@ apiVersion: v1
 metadata:
   name: dhcp-secondary
   namespace: dhcp
+  annotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "9405"
 spec:
   clusterIP: 10.96.6.2
   selector:
