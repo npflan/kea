@@ -34,6 +34,10 @@ data:
               "parameters": { }
             },
             {
+              "library": "/usr/lib/hooks/libdhcp_stat_cmds.so",
+              "parameters": { }
+            },
+            {
               "library": "/usr/lib/hooks/libdhcp_ha.so",
               "parameters": {
                 "high-availability": [
@@ -112,6 +116,10 @@ data:
           "hooks-libraries": [
             {
               "library": "/usr/lib/hooks/libdhcp_lease_cmds.so",
+              "parameters": { }
+            },
+            {
+              "library": "/usr/lib/hooks/libdhcp_stat_cmds.so",
               "parameters": { }
             },
             {

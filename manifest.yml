@@ -9,6 +9,8 @@ spec:
     metadata:
       labels:
         app: dhcp-primary
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "9405"
     spec:
       affinity:
         podAntiAffinity:
@@ -59,6 +61,11 @@ spec:
         resources:
           limits:
             memory: 256M
+      - name: dhcpd-exporter
+        image: npflan/kea-exporter:npf2018-rewrite
+        resources:
+          limits:
+            memory: 256M
       volumes:
         - name: socket
           emptyDir: {}
@@ -91,6 +98,8 @@ spec:
     metadata:
       labels:
         app: dhcp-secondary
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "9405"
     spec:
       affinity:
         podAntiAffinity:
@@ -138,6 +147,11 @@ spec:
             name: kea
           - mountPath: /kea/socket
             name: socket
+        resources:
+          limits:
+            memory: 256M
+      - name: dhcpd-exporter
+        image: npflan/kea-exporter:npf2018-rewrite
         resources:
           limits:
             memory: 256M
