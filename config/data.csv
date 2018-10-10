@@ -12,7 +12,7 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 10.1.16.0/24,npflan,,npflan,,,Active,Access,,Dist 1 - Vlan 16
 10.1.17.0/24,npflan,,npflan,,,Active,Access,,Dist 1 - Vlan 17
 10.1.18.0/24,npflan,,npflan,,,Active,Access,,Dist 1 - Vlan 18
-10.1.248.0/24,npflan,,npflan,,,Active,,,AP-MGMT
+10.1.248.0/24,npflan,,npflan,,,Active,Wireless,,AP-MGMT
 10.1.250.0/24,npflan,,npflan,,,Active,,,CCTV
 10.1.255.0/24,npflan,,npflan,,,Active,Management Access Points,,Dist 1 - Wireless MGMT
 10.2.11.0/24,npflan,,npflan,,,Active,Access,,Dist 2 - Vlan 11
@@ -23,7 +23,7 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 10.2.16.0/24,npflan,,npflan,,,Active,Access,,Dist 2 - Vlan 16
 10.2.17.0/24,npflan,,npflan,,,Active,Access,,Dist 2 - Vlan 17
 10.2.18.0/24,npflan,,npflan,,,Active,Access,,Dist 2 - Vlan 18
-10.2.248.0/24,npflan,,npflan,,,Active,,,AP-MGMT
+10.2.248.0/24,npflan,,npflan,,,Active,Wireless,,AP-MGMT
 10.2.250.0/24,npflan,,npflan,,,Active,Access,,CCTV
 10.2.255.0/24,npflan,,npflan,,,Active,Management Access Points,,Dist 2 - Wireless MGMT
 10.3.11.0/24,npflan,,npflan,,,Active,Access,,Dist 3 - Vlan 11
@@ -34,7 +34,7 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 10.3.16.0/24,npflan,,npflan,,,Active,Access,,Dist 4 - Vlan 16
 10.3.17.0/24,npflan,,npflan,,,Active,Access,,Dist 3 - Vlan 17
 10.3.18.0/24,npflan,,npflan,,,Active,Access,,Dist 3 - Vlan 18
-10.3.248.0/24,npflan,,npflan,,,Active,,,AP-MGMT
+10.3.248.0/24,npflan,,npflan,,,Active,Wireless,,AP-MGMT
 10.3.250.0/24,npflan,,npflan,,,Active,Access,,CCTV
 10.3.255.0/24,npflan,,npflan,,,Active,Management Access Points,,Dist 3 - Wireless MGMT
 10.4.11.0/24,npflan,,npflan,,,Active,Access,,Dist 4 - Vlan 11
@@ -45,7 +45,7 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 10.4.16.0/24,npflan,,npflan,,,Active,Access,,Dist 4 - Vlan 16
 10.4.17.0/24,npflan,,npflan,,,Active,Access,,Dist 4 - Vlan 17
 10.4.18.0/24,npflan,,npflan,,,Active,Access,,Dist 4 - Vlan 18
-10.4.248.0/24,npflan,,npflan,,,Active,,,AP-MGMT
+10.4.248.0/24,npflan,,npflan,,,Active,Wireless,,AP-MGMT
 10.4.250.0/24,npflan,,npflan,,,Active,Access,,CCTV
 10.4.255.0/24,npflan,,npflan,,,Active,Management Access Points,,Dist 4 - Wireless Management
 10.5.11.0/24,npflan,,npflan,,,Active,Access,,Dist 5 - Vlan 11
@@ -56,7 +56,7 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 10.5.16.0/24,npflan,,npflan,,,Active,Access,,Dist 5 - Vlan 16
 10.5.17.0/24,npflan,,npflan,,,Active,Access,,Dist 5 - Vlan 17
 10.5.18.0/24,npflan,,npflan,,,Active,Access,,Dist 5 - Vlan 18
-10.5.248.0/24,npflan,,npflan,,,Active,,,AP-MGMT
+10.5.248.0/24,npflan,,npflan,,,Active,Wireless,,AP-MGMT
 10.5.250.0/24,npflan,,npflan,,,Active,Access,,CCTV
 10.6.11.0/24,npflan,,npflan,,,Active,Access,,Dist 6 - Vlan 11
 10.6.12.0/24,npflan,,npflan,,,Active,Access,,Dist 6 - Vlan 12
@@ -66,7 +66,7 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 10.6.16.0/24,npflan,,npflan,,,Active,Access,,Dist 6 - Vlan 16
 10.6.17.0/24,npflan,,npflan,,,Active,Access,,Dist 6 - Vlan 17
 10.6.18.0/24,npflan,,npflan,,,Active,Access,,Dist 6 - Vlan 18
-10.6.248.0/24,npflan,,npflan,,,Active,,,AP-MGMT
+10.6.248.0/24,npflan,,npflan,,,Active,Wireless,,AP-MGMT
 10.6.250.0/24,npflan,,npflan,,,Active,Access,,CCTV
 10.7.11.0/24,npflan,,npflan,,,Active,Access,,Dist 7 - Vlan 11
 10.7.12.0/24,npflan,,npflan,,,Active,Access,,Dist 7 - Vlan 12
@@ -76,7 +76,7 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 10.7.16.0/24,npflan,,npflan,,,Active,Access,,Dist 7 - Vlan 16
 10.7.17.0/24,npflan,,npflan,,,Active,Access,,Dist 7 - Vlan 17
 10.7.18.0/24,npflan,,npflan,,,Active,Access,,Dist 7 - Vlan 18
-10.7.248.0/24,npflan,,npflan,,,Active,,,AP-MGMT
+10.7.248.0/24,npflan,,npflan,,,Active,Wireless,,AP-MGMT
 10.7.250.0/24,npflan,,npflan,,,Active,Access,,CCTV
 10.8.11.0/24,npflan,,npflan,,,Active,Access,,Dist 8 - Vlan 11
 10.8.12.0/24,npflan,,npflan,,,Active,Access,,Dist 8 - Vlan 12
@@ -86,7 +86,7 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 10.8.16.0/24,npflan,,npflan,,,Active,Access,,Dist 8 - Vlan 16
 10.8.17.0/24,npflan,,npflan,,,Active,Access,,Dist 8 - Vlan 17
 10.8.18.0/24,npflan,,npflan,,,Active,Access,,Dist 8 - Vlan 18
-10.8.248.0/24,npflan,,npflan,,,Active,,,AP-MGMT
+10.8.248.0/24,npflan,,npflan,,,Active,Wireless,,AP-MGMT
 10.8.250.0/24,npflan,,npflan,,,Active,Access,,CCTV
 10.9.11.0/24,npflan,,npflan,,,Active,Access,,Dist 9 - Vlan 11
 10.9.12.0/24,npflan,,npflan,,,Active,Access,,Dist 9 - Vlan 12
@@ -96,7 +96,7 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 10.9.16.0/24,npflan,,npflan,,,Active,Access,,Dist 9 - Vlan 16
 10.9.17.0/24,npflan,,npflan,,,Active,Access,,Dist 9 - Vlan 17
 10.9.18.0/24,npflan,,npflan,,,Active,Access,,Dist 9 - Vlan 18
-10.9.248.0/24,npflan,,npflan,,,Active,,,AP-MGMT
+10.9.248.0/24,npflan,,npflan,,,Active,Wireless,,AP-MGMT
 10.9.250.0/24,npflan,,npflan,,,Active,Access,,CCTV
 10.9.251.0/24,npflan,,npflan,,,Active,Access,,Wireless - NPFCREW
 10.10.11.0/24,npflan,,npflan,,,Active,Access,,Dist 10 - Vlan 11
@@ -107,7 +107,7 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 10.10.16.0/24,npflan,,npflan,,,Active,Access,,Dist 10 - Vlan 16
 10.10.17.0/24,npflan,,npflan,,,Active,Access,,Dist 10 - Vlan 17
 10.10.18.0/24,npflan,,npflan,,,Active,Access,,Dist 10 - Vlan 18
-10.10.248.0/24,npflan,,npflan,,,Active,,,AP-MGMT
+10.10.248.0/24,npflan,,npflan,,,Active,Wireless,,AP-MGMT
 10.10.250.0/24,npflan,,npflan,,,Active,Access,,CCTV
 10.11.11.0/24,npflan,,npflan,,,Active,Access,,Dist 11 - Vlan 11
 10.11.12.0/24,npflan,,npflan,,,Active,Access,,Dist 11 - Vlan 12
@@ -117,7 +117,7 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 10.11.16.0/24,npflan,,npflan,,,Active,Access,,Dist 11 - Vlan 16
 10.11.17.0/24,npflan,,npflan,,,Active,Access,,Dist 11 - Vlan 17
 10.11.18.0/24,npflan,,npflan,,,Active,Access,,Dist 11 - Vlan 18
-10.11.248.0/24,npflan,,npflan,,,Active,,,AP-MGMT
+10.11.248.0/24,npflan,,npflan,,,Active,Wireless,,AP-MGMT
 10.11.250.0/24,npflan,,npflan,,,Active,Access,,CCTV
 10.12.11.0/24,npflan,,npflan,,,Active,Access,,Dist 12 - Vlan 11
 10.12.12.0/24,npflan,,npflan,,,Active,Access,,Dist 12 - Vlan 12
@@ -127,7 +127,7 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 10.12.16.0/24,npflan,,npflan,,,Active,Access,,Dist 12 - Vlan 16
 10.12.17.0/24,npflan,,npflan,,,Active,Access,,Dist 12 - Vlan 17
 10.12.18.0/24,npflan,,npflan,,,Active,Access,,Dist 12 - Vlan 18
-10.12.248.0/24,npflan,,npflan,,,Active,,,AP-MGMT
+10.12.248.0/24,npflan,,npflan,,,Active,Wireless,,AP-MGMT
 10.12.250.0/24,npflan,,npflan,,,Active,Access,,CCTV
 10.13.11.0/24,npflan,,npflan,,,Active,Access,,Dist 13 - Vlan 11
 10.13.12.0/24,npflan,,npflan,,,Active,Access,,Dist 13 - Vlan 12
@@ -137,7 +137,7 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 10.13.16.0/24,npflan,,npflan,,,Active,Access,,Dist 13 - Vlan 16
 10.13.17.0/24,npflan,,npflan,,,Active,Access,,Dist 13 - Vlan 17
 10.13.18.0/24,npflan,,npflan,,,Active,Access,,Dist 13 - Vlan 18
-10.13.248.0/24,npflan,,npflan,,,Active,,,AP-MGMT
+10.13.248.0/24,npflan,,npflan,,,Active,Wireless,,AP-MGMT
 10.13.250.0/24,npflan,,npflan,,,Active,Access,,CCTV
 10.14.11.0/24,npflan,,npflan,,,Active,Access,,Dist 14 - Vlan 11
 10.14.12.0/24,npflan,,npflan,,,Active,Access,,Dist 14 - Vlan 12
@@ -147,12 +147,46 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 10.14.16.0/24,npflan,,npflan,,,Active,Access,,Dist 14 - Vlan 16
 10.14.17.0/24,npflan,,npflan,,,Active,Access,,Dist 14 - Vlan 17
 10.14.18.0/24,npflan,,npflan,,,Active,Access,,Dist 14 - Vlan 18
-10.14.248.0/24,npflan,,npflan,,,Active,,,AP-MGMT
+10.14.248.0/24,npflan,,npflan,,,Active,Wireless,,AP-MGMT
 10.14.250.0/24,npflan,,npflan,,,Active,Access,,CCTV
 10.57.10.0/24,npflan,,,,,Active,Access,,
-10.100.0.0/22,npflan,,npflan,npflan-gameserver,100,Active,Game Servers,True,gameserver rack 3
-10.100.4.0/22,npflan,,npflan,npflan-gameserver,100,Active,Game Servers,True,gameserver rack 6
-10.100.8.0/22,npflan,,npflan,npflan-gameserver,100,Active,Game Servers,True,gameserver rack 7
+10.100.0.0/22,npflan,,npflan,npflan-gameserver,100,Active,Game Servers,,gameserver rack 1
+10.100.0.16/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 1 på TOR3
+10.100.0.32/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 2 på TOR3
+10.100.0.48/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 3 på TOR3
+10.100.0.64/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 4 på TOR3
+10.100.0.80/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 5 på TOR3
+10.100.0.96/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 6 på TOR3
+10.100.0.112/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 7 på TOR3
+10.100.0.128/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 8 på TOR3
+10.100.0.144/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 9 på TOR3
+10.100.0.160/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 10 på TOR3
+10.100.0.176/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 11 på TOR3
+10.100.0.192/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 12 på TOR3
+10.100.0.208/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 13 på TOR3
+10.100.0.224/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 14 på TOR3
+10.100.0.240/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 15 på TOR3
+10.100.1.0/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 16 på TOR3
+10.100.1.16/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 17 på TOR3
+10.100.1.32/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 18 på TOR3
+10.100.1.48/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 19 på TOR3
+10.100.1.64/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 20 på TOR3
+10.100.1.80/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 21 på TOR3
+10.100.1.96/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 22 på TOR3
+10.100.1.112/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 23 på TOR3
+10.100.1.128/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 24 på TOR3
+10.100.1.144/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 25 på TOR3
+10.100.1.160/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 26 på TOR3
+10.100.1.176/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 27 på TOR3
+10.100.1.192/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 28 på TOR3
+10.100.1.208/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 29 på TOR3
+10.100.1.224/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 30 på TOR3
+10.100.1.240/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 31 på TOR3
+10.100.2.0/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 32 på TOR3
+10.100.2.16/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 33 på TOR3
+10.100.2.32/28,npflan,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 34 på TOR3
+10.100.4.0/22,npflan,,npflan,npflan-gameserver,100,Active,Game Servers,True,gameserver rack 2
+10.100.8.0/22,npflan,,npflan,npflan-gameserver,100,Active,Game Servers,True,gameserver rack 3
 10.100.101.0/24,npflan,,npflan,,100,Active,Server Net dhcp,True,rack1.server.npf
 10.100.102.0/24,npflan,,npflan,,100,Active,Server Net dhcp,True,rack2.server.npf
 10.100.103.0/24,npflan,,npflan,,100,Active,Server Net dhcp,,rack3.server.npf
@@ -181,7 +215,7 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 10.250.16.0/24,npflan,,npflan,,,Active,Access,,Marketing - Vlan 16
 10.250.17.0/24,npflan,,npflan,,,Active,Access,,Marketing - Vlan 17
 10.250.18.0/24,npflan,,npflan,,,Active,Access,,Marketing - Vlan 18
-10.250.248.0/24,npflan,,npflan,,,Active,,,AP-MGMT
+10.250.248.0/24,npflan,,npflan,,,Active,Wireless,,AP-MGMT
 10.250.250.0/24,npflan,,npflan,,,Active,Access,,CCTV
 10.251.11.0/24,npflan,,npflan,,,Active,Access,,Dist E4 - Vlan 11 - CS:GO reservation
 10.251.12.0/24,npflan,,npflan,,,Active,Access,,Dist E4 - Vlan 12
@@ -191,7 +225,7 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 10.251.16.0/24,npflan,,npflan,,,Active,Access,,Dist E4 - Vlan 16
 10.251.17.0/24,npflan,,npflan,,,Active,Access,,Dist E4 - Vlan 17
 10.251.18.0/24,npflan,,npflan,,,Active,Access,,Dist E4 - Vlan 18
-10.251.248.0/24,npflan,,npflan,,,Active,,,AP-MGMT
+10.251.248.0/24,npflan,,npflan,,,Active,Wireless,,AP-MGMT
 10.251.250.0/24,npflan,,npflan,,,Active,Access,,CCTV
 10.252.11.0/24,npflan,,npflan,,,Active,Access,,Dist E3 - Vlan 11 - CS:GO reservation
 10.252.12.0/24,npflan,,npflan,,,Active,Access,,Dist E3 - Vlan 12
@@ -201,7 +235,7 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 10.252.16.0/24,npflan,,npflan,,,Active,Access,,Dist E3 - Vlan 16
 10.252.17.0/24,npflan,,npflan,,,Active,Access,,Dist E3 - Vlan 17
 10.252.18.0/24,npflan,,npflan,,,Active,Access,,Dist E3 - Vlan 18
-10.252.248.0/24,npflan,,npflan,,,Active,,,AP-MGMT
+10.252.248.0/24,npflan,,npflan,,,Active,Wireless,,AP-MGMT
 10.252.250.0/24,npflan,,npflan,,,Active,Access,,CCTV
 10.253.11.0/24,npflan,,npflan,,,Active,Access,,Dist E2 - Vlan 11
 10.253.12.0/24,npflan,,npflan,,,Active,Access,,Dist E2 - Vlan 12
@@ -211,7 +245,7 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 10.253.16.0/24,npflan,,npflan,,,Active,Access,,Dist E2 - Vlan 16
 10.253.17.0/24,npflan,,npflan,,,Active,Access,,Dist E2 - Vlan 17
 10.253.18.0/24,npflan,,npflan,,,Active,Access,,Dist E2 - Vlan 18
-10.253.248.0/24,npflan,,npflan,,,Active,,,AP-MGMT
+10.253.248.0/24,npflan,,npflan,,,Active,Wireless,,AP-MGMT
 10.253.250.0/24,npflan,,npflan,,,Active,Access,,CCTV
 10.254.11.0/24,npflan,,npflan,,,Active,Access,,Dist E1 - Vlan 11
 10.254.12.0/24,npflan,,npflan,,,Active,Access,,Dist E1 - Vlan 12
@@ -221,9 +255,10 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 10.254.16.0/24,npflan,,npflan,,,Active,Access,,Dist E1 - Vlan 16
 10.254.17.0/24,npflan,,npflan,,,Active,Access,,Dist E1 - Vlan 17
 10.254.18.0/24,npflan,,npflan,,,Active,Access,,Dist E1 - Vlan 18
-10.254.248.0/24,npflan,,npflan,,,Active,,,AP-MGMT
+10.254.248.0/24,npflan,,npflan,,,Active,Wireless,,AP-MGMT
 10.254.250.0/24,npflan,,npflan,,,Active,Access,,CCTV
 10.255.128.0/24,npflan,,npflan,,,Active,Management  Netværk,,Core Net
+10.255.129.0/24,npflan,,npflan,,,Active,Management  Netværk,,Juniper NOC
 10.255.200.0/25,npflan,,npflan,,,Active,Management  Netværk,,Core1 - Access/Wireless Management
 10.255.200.128/25,npflan,,npflan,,,Active,Management  Netværk,,Core2 - Acess/Wireless Management
 10.255.201.0/24,npflan,,npflan,,,Active,Management  Netværk,,Dist 1 - Access Management

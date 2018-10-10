@@ -11,9 +11,10 @@ import json
 def subnet(row):
     if row['role'].casefold() not in ['access', 'wireless', 'management  netværk']:
         return
-    if row['description'].casefold() in ['ap-mgmt', 'wireless networks']:
+    if row['description'].casefold() in ['wireless networks']:
         return
     ip = ipaddress.IPv4Network(row['prefix'])
+    
     if ip.prefixlen > 24:
         return
     return {
