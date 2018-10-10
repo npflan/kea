@@ -32,14 +32,17 @@ class DhcpdCollector(object):
             c: GaugeMetricFamily(f'kea_lease_{c.replace("-","_")}', f'{c} in subnet', labels=['subnet_id','subnet_desc'])
             for c in resultset['columns'] if c != 'subnet-id'
         }
-        for stat in subnetstats:
-            subnet_id = stat['subnet-id']
-            subnet_descr = self.subnets[subnet_id]
-            for statname, value in stat.items():
-                if statname == 'subnet-id':
-                    continue
-                metrics[statname].add_metric([str(subnet_id),subnet_descr.with_prefixlen], value)
-        yield from metrics.values()
+        try:
+            for stat in subnetstats:
+                subnet_id = stat['subnet-id']
+                subnet_descr = self.subnets[subnet_id]
+                for statname, value in stat.items():
+                    if statname == 'subnet-id':
+                        continue
+                    metrics[statname].add_metric([str(subnet_id),subnet_descr.with_prefixlen], value)
+            yield from metrics.values()
+        except KeyError:
+            self.getsubnets()
 
 # For easy debugging
 if __name__ == '__main__':

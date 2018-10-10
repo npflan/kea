@@ -14,6 +14,8 @@ def subnet(row):
     if row['description'].casefold() in ['wireless networks']:
         return
     ip = ipaddress.IPv4Network(row['prefix'])
+
+    poolstart = 100 if ip.subnet_of(ipaddress.IPv4Network('10.255.0.0/16')) else 4
     
     if ip.prefixlen > 24:
         return
@@ -21,7 +23,7 @@ def subnet(row):
         "subnet": ip.with_prefixlen,
         "pools": [
           {
-              "pool":  str(ip[4]) + "-" + str(ip[pow(2, (32-ip.prefixlen))-6])
+              "pool":  str(ip[poolstart]) + "-" + str(ip[pow(2, (32-ip.prefixlen))-6])
           }
         ],
         "relay": {

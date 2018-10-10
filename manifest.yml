@@ -60,7 +60,7 @@ spec:
           limits:
             memory: 256M
       - name: dhcpd-exporter
-        image: npflan/kea-exporter:npf2018-rewrite
+        image: npflan/kea-exporter:npf2018-try-except
         resources:
           limits:
             memory: 256M
@@ -147,7 +147,7 @@ spec:
           limits:
             memory: 256M
       - name: dhcpd-exporter
-        image: npflan/kea-exporter:npf2018-rewrite
+        image: npflan/kea-exporter:npf2018-try-except
         resources:
           limits:
             memory: 256M
