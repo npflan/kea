@@ -81,6 +81,8 @@ spec:
             items:
             - key: primary.conf
               path: kea-dhcp4.conf
+            - key: ap-options.conf
+              path: ap-options.conf
         - name: backend
           persistentVolumeClaim:
             claimName: kea-primary-claim
@@ -168,6 +170,8 @@ spec:
             items:
             - key: secondary.conf
               path: kea-dhcp4.conf
+            - key: ap-options.conf
+              path: ap-options.conf
         - name: backend
           persistentVolumeClaim:
             claimName: kea-secondary-claim   

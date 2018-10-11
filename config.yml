@@ -18,6 +18,7 @@ data:
           "valid-lifetime": 10800,
           "renew-timer": 3600,
           "rebind-timer": 7200,
+          <?include "/kea/config/ap-options.conf"?>,
           <?include "/kea/subnet/subnet.conf"?>,
           "lease-database": {
             "type": "memfile",
@@ -170,6 +171,51 @@ data:
           }]
       }
     }
+  ap-options.conf: |-
+    "option-def": [
+      {
+        "name":  "cisco-lwapp-servers",
+        "code":  241,
+        "space": "vendor-encapsulated-options-space",
+        "type":  "ipv4-address",
+        "array": true
+      }
+    ],
+    "client-classes": [
+      {
+        "name": "Cisco_AP_c1130",
+        "test": "option[vendor-class-identifier].text == 'Cisco AP c1130'",
+        "option-data": [
+          {
+            "name":       "cisco-lwapp-servers",
+            "code":       241,
+            "space":      "vendor-encapsulated-options-space",
+            "csv-format": true,
+            "data":       "10.0.248.141"
+          },
+          {
+            "name": "vendor-encapsulated-options"
+          }
+        ]
+      },
+      {
+        "name": "Cisco_AP",
+        "test": "substring(option[60].hex,0,8) == 'Cisco AP'",
+        "option-data": [
+          {
+            "name":       "cisco-lwapp-servers",
+            "code":       241,
+            "space":      "vendor-encapsulated-options-space",
+            "csv-format": true,
+            "data":       "10.0.248.140"
+          },
+          {
+            "name": "vendor-encapsulated-options"
+          }
+        ]
+      }
+    ]
+
 kind: ConfigMap
 metadata:
   creationTimestamp: null
