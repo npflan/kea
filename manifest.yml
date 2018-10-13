@@ -44,7 +44,7 @@ spec:
             name: run
         resources:
           limits:
-            memory: 1024M
+            memory: 2048M
       - name: dhcpd-control
         image: npflan/kea:npf2018
         command: ["kea-ctrl-agent"]
@@ -133,7 +133,7 @@ spec:
             name: run
         resources:
           limits:
-            memory: 1024M
+            memory: 2048M
       - name: dhcpd-control
         image: npflan/kea:npf2018
         command: ["kea-ctrl-agent"]
