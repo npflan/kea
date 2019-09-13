@@ -15,8 +15,11 @@ def subnet(row):
         return
     ip = ipaddress.IPv4Network(row['prefix'])
 
-    poolstart = 100 if ip.subnet_of(ipaddress.IPv4Network('10.255.0.0/16')) else 4
-    
+    poolstart = 4
+    if ip.subnet_of(ipaddress.IPv4Network('10.255.0.0/16')) or \
+            ip.subnet_of(ipaddress.IPv4Network('172.20.0.0/16')):
+        poolstart = 100
+
     if ip.prefixlen > 24:
         return
     return {

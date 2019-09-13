@@ -21,6 +21,11 @@ spec:
                     - dhcp-primary
                     - dhcp-secondary
               topologyKey: "kubernetes.io/hostname"
+      tolerations:
+      - key: "critical"
+        operator: "Equal"
+        value: "yes"
+        effect: "NoSchedule"
       hostname: primary
       subdomain: dhcp-pod
       containers:
@@ -110,6 +115,11 @@ spec:
                     - dhcp-primary
                     - dhcp-secondary
               topologyKey: "kubernetes.io/hostname"
+      tolerations:
+      - key: "critical"
+        operator: "Equal"
+        value: "yes"
+        effect: "NoSchedule"
       hostname: secondary
       subdomain: dhcp-pod
       containers:
