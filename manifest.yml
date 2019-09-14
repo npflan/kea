@@ -65,10 +65,10 @@ spec:
           limits:
             memory: 256M
       - name: dhcpd-exporter
-        image: npflan/kea-exporter:npf2018-try-except
+        image: npflan/kea-exporter:golang
         resources:
           limits:
-            memory: 256M
+            memory: 32M
       volumes:
         - name: socket
           emptyDir: {}
@@ -159,10 +159,10 @@ spec:
           limits:
             memory: 256M
       - name: dhcpd-exporter
-        image: npflan/kea-exporter:npf2018-try-except
+        image: npflan/kea-exporter:golang
         resources:
           limits:
-            memory: 256M
+            memory: 32M
       volumes:
         - name: socket
           emptyDir: {}
