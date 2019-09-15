@@ -1,11 +1,19 @@
-FROM python:3.7.0-alpine3.8
-MAINTAINER NPFLAN
+FROM golang:1.13.0-alpine3.10 AS builder
 
-WORKDIR /usr/src/app
+WORKDIR /app
+RUN apk add --no-cache --virtual .go-deps git gcc musl-dev openssl pkgconf
+COPY go.mod .
+COPY go.sum .
+RUN go mod download
 
-COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
+COPY exporter.go .
 
-EXPOSE 9405
-COPY exporter.py ./
-CMD ["gunicorn", "-b", "0.0.0.0:9405", "-t", "180", "exporter:app"]
+# Build static binary
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags '-w -s' exporter.go
+
+ENTRYPOINT ["/app/exporter"]
+
+# Build the smallest image possible
+FROM scratch AS runner
+COPY --from=builder /app/exporter /bin/exporter
+ENTRYPOINT ["/bin/exporter"]

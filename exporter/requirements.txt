@@ -1,3 +1,0 @@
-requests
-gunicorn
-prometheus_client
