@@ -29,7 +29,7 @@ type KeaDHCP4 struct {
 }
 
 type KeaSubnet4 struct {
-	Id     int    `json:"id"`
+	ID     int    `json:"id"`
 	Subnet string `json:"subnet"`
 }
 
@@ -64,10 +64,10 @@ type keaCollector struct {
 	keaConfigM sync.Mutex
 }
 
-func initKeaCollector(conf Config) (*keaCollector, error) {
+func initKeaCollector(conf Config) *keaCollector {
 	return &keaCollector{
 		keaNetLoc: conf.KeaNetLoc,
-	}, nil
+	}
 }
 
 func (c *keaCollector) KeaCommand(cmd string) (*KeaArgument, error) {
@@ -84,6 +84,9 @@ func (c *keaCollector) KeaCommand(cmd string) (*KeaArgument, error) {
 		"application/json",
 		&buf,
 	)
+	defer func() {
+		_ = res.Body.Close()
+	}()
 	if err != nil {
 		return nil, err
 	}
@@ -121,7 +124,7 @@ func (c *keaCollector) GetConfig() (KeaConfig, error) {
 		if err != nil {
 			return nil, err
 		}
-		conf[res.Id] = *cidr
+		conf[res.ID] = *cidr
 	}
 	return conf, nil
 }
@@ -189,10 +192,10 @@ func (c *keaCollector) Collect(ch chan<- prometheus.Metric) {
 	}
 
 	for _, row := range results.Rows {
-		subnetId := row[idOffset]
-		subnet, subnetOK := subnets[subnetId]
+		subnetID := row[idOffset]
+		subnet, subnetOK := subnets[subnetID]
 		if !subnetOK {
-			zap.L().Info("missing config for subnet", zap.Int("id", subnetId))
+			zap.L().Info("missing config for subnet", zap.Int("id", subnetID))
 			err := c.UpdateConfig()
 			if err != nil {
 				zap.L().Warn("could not get config", zap.Error(err))
@@ -211,7 +214,7 @@ func (c *keaCollector) Collect(ch chan<- prometheus.Metric) {
 			}
 			met, err := prometheus.NewConstMetric(
 				metrics[mix], prometheus.GaugeValue, float64(stat),
-				strconv.FormatInt(int64(subnetId), 10), subnet.String(),
+				strconv.FormatInt(int64(subnetID), 10), subnet.String(),
 			)
 			mix++
 			if err != nil {
@@ -236,10 +239,7 @@ func do() error {
 	}
 	zap.ReplaceGlobals(logger)
 
-	collect, err := initKeaCollector(conf)
-	if err != nil {
-		return err
-	}
+	collect := initKeaCollector(conf)
 	prometheus.MustRegister(collect)
 
 	http.Handle("/metrics", promhttp.Handler())
