@@ -198,6 +198,8 @@ metadata:
   name: dhcp-primary
   namespace: dhcp
 spec:
+  type: NodePort
+  externalTrafficPolicy: Local
   clusterIP: 10.96.6.1
   selector:
     app: dhcp-primary
@@ -217,6 +219,8 @@ metadata:
   name: dhcp-secondary
   namespace: dhcp
 spec:
+  type: NodePort
+  externalTrafficPolicy: Local
   clusterIP: 10.96.6.2
   selector:
     app: dhcp-secondary
