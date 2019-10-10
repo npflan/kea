@@ -299,6 +299,7 @@ prefix,vrf,tenant,site,vlan_group,vlan_vid,status,role,is_pool,description
 172.20.1.4/30,npflan,,,,,Active,,,Kube Link Node 1 C2
 172.20.1.8/30,npflan,,,,,Active,,,Kube Link Node 2 C2
 172.20.11.0/24,npflan,,,,,Active,Management  Netværk,,Kubernetes Link Nets Core 1
+172.20.22.0/24,npflan,,,,,Active,Management  Netværk,,Kubernetes Link Nets Core 2
 192.168.0.0/28,npflan,,npflan,,,Active,Link Net,,Core1 - Dist1
 192.168.0.16/28,npflan,,npflan,,,Active,Link Net,,Dist1 - Dist2
 192.168.0.32/28,npflan,,npflan,,,Active,Link Net,,Dist2 - Dist3
