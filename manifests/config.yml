@@ -221,3 +221,5 @@ metadata:
   creationTimestamp: null
   name: kea
   namespace: dhcp
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
