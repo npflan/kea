@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: v1
 kind: Deployment
 metadata:
   name: dhcp-primary
@@ -97,7 +97,7 @@ spec:
           persistentVolumeClaim:
             claimName: kea-primary-claim
 ---
-apiVersion: extensions/v1beta1
+apiVersion: v1
 kind: Deployment
 metadata:
   name: dhcp-secondary
