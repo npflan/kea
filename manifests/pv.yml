@@ -2,6 +2,7 @@ apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: kea-primary-pv
+  argocd.argoproj.io/sync-wave: "2"
 spec:
   capacity:
     storage: 20Gi
@@ -19,12 +20,13 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - widowmaker
+          - erebus
 ---
 apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: kea-secondary-pv
+  argocd.argoproj.io/sync-wave: "2"
 spec:
   capacity:
     storage: 20Gi
@@ -42,4 +44,4 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - roadhog
+          - leviathan

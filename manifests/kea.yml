@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: dhcp-primary
   namespace: dhcp
+  annotations:
+    argocd.argoproj.io/sync-wave: "4"
 spec:
   replicas: 1
   template:
@@ -100,6 +102,8 @@ kind: Deployment
 metadata:
   name: dhcp-secondary
   namespace: dhcp
+  annotations:
+    argocd.argoproj.io/sync-wave: "4"
 spec:
   replicas: 1
   template:
@@ -197,6 +201,8 @@ apiVersion: v1
 metadata:
   name: dhcp-primary
   namespace: dhcp
+  annotations:
+    argocd.argoproj.io/sync-wave: "4"
 spec:
   type: NodePort
   externalTrafficPolicy: Local
@@ -218,6 +224,8 @@ apiVersion: v1
 metadata:
   name: dhcp-secondary
   namespace: dhcp
+  annotations:
+    argocd.argoproj.io/sync-wave: "4"
 spec:
   type: NodePort
   externalTrafficPolicy: Local
@@ -239,6 +247,8 @@ apiVersion: v1
 metadata:
   name: kea-primary-claim
   namespace: dhcp
+  annotations:
+    argocd.argoproj.io/sync-wave: "3"
 spec:
   storageClassName: dhcp
   accessModes:
@@ -252,6 +262,8 @@ apiVersion: v1
 metadata:
   name: kea-secondary-claim
   namespace: dhcp
+  annotations:
+    argocd.argoproj.io/sync-wave: "3"
 spec:
   storageClassName: dhcp
   accessModes:
