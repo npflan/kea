@@ -254,7 +254,7 @@ metadata:
   name: kea-primary-claim
   namespace: dhcp
   annotations:
-    argocd.argoproj.io/sync-wave: "3"
+    argocd.argoproj.io/sync-wave: "4"
 spec:
   storageClassName: dhcp
   accessModes:
@@ -269,7 +269,7 @@ metadata:
   name: kea-secondary-claim
   namespace: dhcp
   annotations:
-    argocd.argoproj.io/sync-wave: "3"
+    argocd.argoproj.io/sync-wave: "4"
 spec:
   storageClassName: dhcp
   accessModes:
