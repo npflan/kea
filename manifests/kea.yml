@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dhcp-primary
@@ -7,6 +7,9 @@ metadata:
     argocd.argoproj.io/sync-wave: "4"
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: dhcp-primary
   template:
     metadata:
       annotations:
@@ -97,7 +100,7 @@ spec:
           persistentVolumeClaim:
             claimName: kea-primary-claim
 ---
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dhcp-secondary
@@ -106,6 +109,9 @@ metadata:
     argocd.argoproj.io/sync-wave: "4"
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: dhcp-secondary
   template:
     metadata:
       annotations:
