@@ -1,0 +1,454 @@
+prefix,vrf,tenant,site,vlan_group,vlan,status,role,is_pool,description
+10.0.0.0/30,NPFLAN,,npflan,npflan-core1,301,Active,Firewall Net,,AVATAR Inside
+10.0.0.4/30,NPFLAN,,npflan,npflan-core1,302,Active,Firewall Net,,LEVIATHAN Inside
+10.0.0.8/30,NPFLAN,,npflan,npflan-core2,301,Active,Firewall Net,,RAGNAROK Inside
+10.0.0.12/30,NPFLAN,,npflan,npflan-core2,302,Active,Firewall Net,,EREBUS Inside
+10.0.250.0/24,NPFLAN,,npflan,npflan-datacenter,25,Active,CCTV,,DC - CCTV
+10.1.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,D1
+10.1.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,D1 - Vlan11
+10.1.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,D1 - Vlan12
+10.1.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,D1 - Vlan13
+10.1.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,D1 - Vlan14
+10.1.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,D1 - Vlan15
+10.1.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,D1 - Vlan16
+10.1.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,D1 - Vlan17
+10.1.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,D1 - Vlan18
+10.1.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,D1 - Environment
+10.1.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,D1 - Wireless AP management
+10.1.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,D1 - CCTV
+10.2.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,D2
+10.2.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,D2 - Vlan11
+10.2.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,D2 - Vlan12
+10.2.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,D2 - Vlan13
+10.2.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,D2 - Vlan14
+10.2.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,D2 - Vlan15
+10.2.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,D2 - Vlan16
+10.2.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,D2 - Vlan17
+10.2.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,D2 - Vlan18
+10.2.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,D2 - Environment
+10.2.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,D2 - Wireless AP management
+10.2.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,D2 - CCTV
+10.3.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,D3
+10.3.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,D3 - Vlan11
+10.3.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,D3 - Vlan12
+10.3.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,D3 - Vlan13
+10.3.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,D3 - Vlan14
+10.3.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,D3 - Vlan15
+10.3.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,D3 - Vlan16
+10.3.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,D3 - Vlan17
+10.3.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,D3 - Vlan18
+10.3.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,D3 - Environment
+10.3.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,D3 - Wireless AP management
+10.3.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,D3 - CCTV
+10.4.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,D4
+10.4.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,D4 - Vlan11
+10.4.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,D4 - Vlan12
+10.4.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,D4 - Vlan13
+10.4.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,D4 - Vlan14
+10.4.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,D4 - Vlan15
+10.4.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,D4 - Vlan16
+10.4.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,D4 - Vlan17
+10.4.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,D4 - Vlan18
+10.4.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,D4 - Environment
+10.4.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,D4 - Wireless AP management
+10.4.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,D4 - CCTV
+10.5.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,D5
+10.5.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,D5 - Vlan11
+10.5.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,D5 - Vlan12
+10.5.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,D5 - Vlan13
+10.5.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,D5 - Vlan14
+10.5.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,D5 - Vlan15
+10.5.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,D5 - Vlan16
+10.5.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,D5 - Vlan17
+10.5.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,D5 - Vlan18
+10.5.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,D5 - Environment
+10.5.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,D5 - Wireless AP management
+10.5.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,D5 - CCTV
+10.6.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,D6
+10.6.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,D6 - Vlan11
+10.6.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,D6 - Vlan12
+10.6.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,D6 - Vlan13
+10.6.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,D6 - Vlan14
+10.6.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,D6 - Vlan15
+10.6.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,D6 - Vlan16
+10.6.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,D6 - Vlan17
+10.6.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,D6 - Vlan18
+10.6.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,D6 - Environment
+10.6.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,D6 - Wireless AP management
+10.6.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,D6 - CCTV
+10.7.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,D7
+10.7.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,D7 - Vlan11
+10.7.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,D7 - Vlan12
+10.7.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,D7 - Vlan13
+10.7.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,D7 - Vlan14
+10.7.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,D7 - Vlan15
+10.7.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,D7 - Vlan16
+10.7.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,D7 - Vlan17
+10.7.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,D7 - Vlan18
+10.7.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,D7 - Environment
+10.7.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,D7 - Wireless AP management
+10.7.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,D7 - CCTV
+10.8.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,D8
+10.8.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,D8 - Vlan11
+10.8.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,D8 - Vlan12
+10.8.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,D8 - Vlan13
+10.8.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,D8 - Vlan14
+10.8.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,D8 - Vlan15
+10.8.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,D8 - Vlan16
+10.8.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,D8 - Vlan17
+10.8.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,D8 - Vlan18
+10.8.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,D8 - Environment
+10.8.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,D8 - Wireless AP management
+10.8.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,D8 - CCTV
+10.9.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,D9
+10.9.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,D9 - Vlan11
+10.9.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,D9 - Vlan12
+10.9.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,D9 - Vlan13
+10.9.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,D9 - Vlan14
+10.9.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,D9 - Vlan15
+10.9.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,D9 - Vlan16
+10.9.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,D9 - Vlan17
+10.9.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,D9 - Vlan18
+10.9.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,D9 - Environment
+10.9.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,D9 - Wireless AP management
+10.9.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,D9 - CCTV
+10.10.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,D10
+10.10.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,D10 - Vlan11
+10.10.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,D10 - Vlan12
+10.10.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,D10 - Vlan13
+10.10.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,D10 - Vlan14
+10.10.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,D10 - Vlan15
+10.10.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,D10 - Vlan16
+10.10.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,D10 - Vlan17
+10.10.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,D10 - Vlan18
+10.10.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,D10 - Environment
+10.10.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,D10 - Wireless AP management
+10.10.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,D10 - CCTV
+10.11.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,D11
+10.11.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,D11 - Vlan11
+10.11.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,D11 - Vlan12
+10.11.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,D11 - Vlan13
+10.11.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,D11 - Vlan14
+10.11.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,D11 - Vlan15
+10.11.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,D11 - Vlan16
+10.11.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,D11 - Vlan17
+10.11.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,D11 - Vlan18
+10.11.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,D11 - Environment
+10.11.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,D11 - Wireless AP management
+10.11.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,D11 - CCTV
+10.12.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,D12
+10.12.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,D12 - Vlan11
+10.12.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,D12 - Vlan12
+10.12.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,D12 - Vlan13
+10.12.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,D12 - Vlan14
+10.12.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,D12 - Vlan15
+10.12.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,D12 - Vlan16
+10.12.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,D12 - Vlan17
+10.12.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,D12 - Vlan18
+10.12.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,D12 - Environment
+10.12.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,D12 - Wireless AP management
+10.12.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,D12 - CCTV
+10.13.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,D13
+10.13.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,D13 - Vlan11
+10.13.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,D13 - Vlan12
+10.13.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,D13 - Vlan13
+10.13.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,D13 - Vlan14
+10.13.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,D13 - Vlan15
+10.13.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,D13 - Vlan16
+10.13.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,D13 - Vlan17
+10.13.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,D13 - Vlan18
+10.13.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,D13 - Environment
+10.13.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,D13 - Wireless AP management
+10.13.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,D13 - CCTV
+10.14.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,D14
+10.14.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,D14 - Vlan11
+10.14.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,D14 - Vlan12
+10.14.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,D14 - Vlan13
+10.14.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,D14 - Vlan14
+10.14.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,D14 - Vlan15
+10.14.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,D14 - Vlan16
+10.14.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,D14 - Vlan17
+10.14.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,D14 - Vlan18
+10.14.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,D14 - Environment
+10.14.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,D14 - Wireless AP management
+10.14.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,D14 - CCTV
+10.15.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,D15
+10.15.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,D15 - Vlan11
+10.15.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,D15 - Vlan12
+10.15.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,D15 - Vlan13
+10.15.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,D15 - Vlan14
+10.15.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,D15 - Vlan15
+10.15.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,D15 - Vlan16
+10.15.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,D15 - Vlan17
+10.15.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,D15 - Vlan18
+10.15.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,D15 - Environment
+10.15.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,D15 - Wireless AP management
+10.15.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,D15 - CCTV
+10.16.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,D16
+10.16.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,D16 - Vlan11
+10.16.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,D16 - Vlan12
+10.16.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,D16 - Vlan13
+10.16.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,D16 - Vlan14
+10.16.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,D16 - Vlan15
+10.16.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,D16 - Vlan16
+10.16.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,D16 - Vlan17
+10.16.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,D16 - Vlan18
+10.16.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,D16 - Environment
+10.16.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,D16 - Wireless AP management
+10.16.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,D16 - CCTV
+10.17.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,G2
+10.17.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,G2 - Vlan11
+10.17.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,G2 - Vlan12
+10.17.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,G2 - Vlan13
+10.17.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,G2 - Vlan14
+10.17.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,G2 - Vlan15
+10.17.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,G2 - Vlan16
+10.17.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,G2 - Vlan17
+10.17.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,G2 - Vlan18
+10.57.10.0/24,NPFLAN,,,,,Active,Access,,
+10.90.0.0/16,NPFLAN,,npflan,,,Container,Services,,Kubernetes Pod Network
+10.96.0.0/14,NPFLAN,,npflan,,,Active,Services,,Kubernetes Service Net
+10.100.0.0/16,NPFLAN,,npflan,,,Container,Server Net dhcp,,
+10.100.0.0/22,NPFLAN,,npflan,npflan-gameserver,100,Active,Game Servers,,gameserver rack 1
+10.100.0.16/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 1 på TOR3
+10.100.0.32/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 2 på TOR3
+10.100.0.48/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 3 på TOR3
+10.100.0.64/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 4 på TOR3
+10.100.0.80/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 5 på TOR3
+10.100.0.96/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 6 på TOR3
+10.100.0.112/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 7 på TOR3
+10.100.0.128/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 8 på TOR3
+10.100.0.144/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 9 på TOR3
+10.100.0.160/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 10 på TOR3
+10.100.0.176/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 11 på TOR3
+10.100.0.192/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 12 på TOR3
+10.100.0.208/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 13 på TOR3
+10.100.0.224/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 14 på TOR3
+10.100.0.240/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 15 på TOR3
+10.100.1.0/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 16 på TOR3
+10.100.1.16/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 17 på TOR3
+10.100.1.32/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 18 på TOR3
+10.100.1.48/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 19 på TOR3
+10.100.1.64/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 20 på TOR3
+10.100.1.80/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 21 på TOR3
+10.100.1.96/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 22 på TOR3
+10.100.1.112/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 23 på TOR3
+10.100.1.128/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 24 på TOR3
+10.100.1.144/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 25 på TOR3
+10.100.1.160/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 26 på TOR3
+10.100.1.176/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 27 på TOR3
+10.100.1.192/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 28 på TOR3
+10.100.1.208/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 29 på TOR3
+10.100.1.224/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 30 på TOR3
+10.100.1.240/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 31 på TOR3
+10.100.2.0/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 32 på TOR3
+10.100.2.16/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 33 på TOR3
+10.100.2.32/28,NPFLAN,,npflan,npflan-gameserver,100,Active,gameserver-net,,Gameserver net for server ip i port 34 på TOR3
+10.100.4.0/22,NPFLAN,,npflan,npflan-gameserver,100,Active,Game Servers,True,gameserver rack 2
+10.100.4.16/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 1 på TOR6
+10.100.4.32/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 2 på TOR6
+10.100.4.48/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 3 på TOR6
+10.100.4.64/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 4 på TOR6
+10.100.4.80/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 5 på TOR6
+10.100.4.96/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 6 på TOR6
+10.100.4.112/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 7 på TOR6
+10.100.4.128/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 8 på TOR6
+10.100.4.144/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 9 på TOR6
+10.100.4.160/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 10 på TOR6
+10.100.4.176/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 11 på TOR6
+10.100.4.192/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 12 på TOR6
+10.100.4.208/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 13 på TOR6
+10.100.4.224/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 14 på TOR6
+10.100.4.240/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 15 på TOR6
+10.100.5.0/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 16 på TOR6
+10.100.5.16/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 17 på TOR6
+10.100.5.32/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 18 på TOR6
+10.100.5.48/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 19 på TOR6
+10.100.5.64/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 20 på TOR6
+10.100.5.80/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 21 på TOR6
+10.100.5.96/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 22 på TOR6
+10.100.5.112/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 23 på TOR6
+10.100.5.128/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 24 på TOR6
+10.100.5.144/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 25 på TOR6
+10.100.5.160/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 26 på TOR6
+10.100.5.176/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 27 på TOR6
+10.100.5.192/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 28 på TOR6
+10.100.5.208/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 29 på TOR6
+10.100.5.224/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 30 på TOR6
+10.100.5.240/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 31 på TOR6
+10.100.6.0/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 32 på TOR6
+10.100.6.16/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 33 på TOR6
+10.100.6.32/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 34 på TOR6
+10.100.8.0/22,NPFLAN,,npflan,npflan-gameserver,100,Active,Game Servers,True,gameserver rack 3
+10.100.8.16/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 1 på TOR7
+10.100.8.32/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 2 på TOR7
+10.100.8.48/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 3 på TOR7
+10.100.8.64/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 4 på TOR7
+10.100.8.80/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 5 på TOR7
+10.100.8.96/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 6 på TOR7
+10.100.8.112/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 7 på TOR7
+10.100.8.128/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 8 på TOR7
+10.100.8.144/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 9 på TOR7
+10.100.8.160/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 10 på TOR7
+10.100.8.176/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 11 på TOR7
+10.100.8.192/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 12 på TOR7
+10.100.8.208/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 13 på TOR7
+10.100.8.224/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 14 på TOR7
+10.100.8.240/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 15 på TOR7
+10.100.9.0/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 16 på TOR7
+10.100.9.16/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 17 på TOR7
+10.100.9.32/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 18 på TOR7
+10.100.9.48/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 19 på TOR7
+10.100.9.64/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 20 på TOR7
+10.100.9.80/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 21 på TOR7
+10.100.9.96/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 22 på TOR7
+10.100.9.112/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 23 på TOR7
+10.100.9.128/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 24 på TOR7
+10.100.9.144/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 25 på TOR7
+10.100.9.160/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 26 på TOR7
+10.100.9.176/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 27 på TOR7
+10.100.9.192/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 28 på TOR7
+10.100.9.208/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 29 på TOR7
+10.100.9.224/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 30 på TOR7
+10.100.9.240/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 31 på TOR7
+10.100.10.0/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 32 på TOR7
+10.100.10.16/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 33 på TOR7
+10.100.10.32/28,NPFLAN,,npflan,npflan-gameserver,100,Reserved,gameserver-net,,Gameserver net for server ip i port 34 på TOR7
+10.100.100.0/24,NPFLAN,,npflan,,,Active,,,C3000 NPF 2020
+10.100.101.0/24,NPFLAN,,npflan,,100,Active,Server Net dhcp,True,rack1.server.npf
+10.100.102.0/24,NPFLAN,,npflan,,100,Active,Server Net dhcp,True,rack2.server.npf
+10.100.103.0/24,NPFLAN,,npflan,,100,Active,Server Net dhcp,,rack3.server.npf
+10.100.201.0/24,NPFLAN,,npflan,,200,Active,Management Server,True,rack1.management.server.npf
+10.100.202.0/24,NPFLAN,,npflan,,200,Active,Management Server,True,rack2.management.server.npf
+10.100.203.0/24,NPFLAN,,npflan,,200,Active,Management Server,,rack3.management.server.npf
+10.100.255.0/24,NPFLAN,,npflan,,,Active,Link Net,,Server Public-Private
+10.100.255.0/30,NPFLAN,,npflan,,,Active,Link Net,,TOR6-TOR7
+10.100.255.4/30,NPFLAN,,npflan,,,Active,Link Net,,TOR6-TOR3
+10.100.255.8/30,NPFLAN,,npflan,,,Active,Link Net,,TOR3-TOR7
+10.100.255.12/30,NPFLAN,,npflan,,,Active,Link Net,,TOR3-Duconet
+10.101.0.0/16,NPFLAN,,npflan,,,Active,Server k8s,,server k8s
+10.101.0.0/17,NPFLAN,,npflan,,,Active,Server k8s,,server k8s pod cidr
+10.101.128.0/17,NPFLAN,,npflan,,,Active,Server k8s,,server k8s service cidr
+10.248.0.0/16,NPFLAN,,npflan,,,Active,Wireless,,Wireless Networks
+10.248.0.0/18,NPFLAN,,npflan,npflan-datacenter,250,Active,Wireless,,DC - Wireless Open
+10.248.128.0/20,NPFLAN,,npflan,npflan-datacenter,251,Active,Wireless,,DC - Wireless Crew
+10.248.160.0/20,NPFLAN,,npflan,npflan-datacenter,252,Active,Wireless,,DC - Wireless Expo
+10.248.224.0/23,NPFLAN,,npflan,npflan-datacenter,253,Active,Wireless,,DC - Wireless Billet
+10.248.248.0/22,NPFLAN,,npflan,npflan-datacenter,254,Active,Wireless,,DC - Wireless ADM
+10.248.255.0/24,NPFLAN,,npflan,npflan-datacenter,255,Active,Management Access Points,,DC - Wireless management (CAPWAP)
+10.251.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,E4
+10.251.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,E4 - Vlan11
+10.251.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,E4 - Vlan12
+10.251.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,E4 - Vlan13
+10.251.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,E4 - Vlan14
+10.251.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,E4 - Vlan15
+10.251.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,E4 - Vlan16
+10.251.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,E4 - Vlan17
+10.251.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,E4 - Vlan18
+10.251.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,E4 - Environment
+10.251.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,E4 - Wireless AP management
+10.251.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,E4 - CCTV
+10.252.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,E3
+10.252.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,E3 - Vlan11
+10.252.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,E3 - Vlan12
+10.252.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,E3 - Vlan13
+10.252.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,E3 - Vlan14
+10.252.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,E3 - Vlan15
+10.252.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,E3 - Vlan16
+10.252.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,E3 - Vlan17
+10.252.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,E3 - Vlan18
+10.252.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,E3 - Environment
+10.252.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,E3 - Wireless AP management
+10.252.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,E3 - CCTV
+10.253.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,E2
+10.253.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,E2 - Vlan11
+10.253.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,E2 - Vlan12
+10.253.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,E2 - Vlan13
+10.253.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,E2 - Vlan14
+10.253.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,E2 - Vlan15
+10.253.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,E2 - Vlan16
+10.253.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,E2 - Vlan17
+10.253.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,E2 - Vlan18
+10.253.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,E2 - Environment
+10.253.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,E2 - Wireless AP management
+10.253.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,E2 - CCTV
+10.254.0.0/16,NPFLAN,,npflan,,,Container,Distribution Net,,E1
+10.254.11.0/24,NPFLAN,,npflan,npflan-access,11,Active,Access,,E1 - Vlan11
+10.254.12.0/24,NPFLAN,,npflan,npflan-access,12,Active,Access,,E1 - Vlan12
+10.254.13.0/24,NPFLAN,,npflan,npflan-access,13,Active,Access,,E1 - Vlan13
+10.254.14.0/24,NPFLAN,,npflan,npflan-access,14,Active,Access,,E1 - Vlan14
+10.254.15.0/24,NPFLAN,,npflan,npflan-access,15,Active,Access,,E1 - Vlan15
+10.254.16.0/24,NPFLAN,,npflan,npflan-access,16,Active,Access,,E1 - Vlan16
+10.254.17.0/24,NPFLAN,,npflan,npflan-access,17,Active,Access,,E1 - Vlan17
+10.254.18.0/24,NPFLAN,,npflan,npflan-access,18,Active,Access,,E1 - Vlan18
+10.254.240.0/24,NPFLAN,,npflan,npflan-access,240,Active,Environment,,E1 - Environment
+10.254.248.0/24,NPFLAN,,npflan,npflan-access,248,Active,Management Access Points,,E1 - Wireless AP management
+10.254.250.0/24,NPFLAN,,npflan,npflan-access,250,Active,CCTV,,E1 - CCTV
+10.255.192.0/18,NPFLAN,,npflan,,,Container,Management  Netværk,,Netværk Management
+10.255.193.0/24,NPFLAN,,npflan,npflan-datacenter,193,Active,Management  Netværk,,DC - Datacenter Management
+10.255.201.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,D1 - Access Management
+10.255.202.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,D2 - Access Management
+10.255.203.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,D3 - Access Management
+10.255.204.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,D4 - Access Management
+10.255.205.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,D5 - Access Management
+10.255.206.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,D6 - Access Management
+10.255.207.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,D7 - Access Management
+10.255.208.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,D8 - Access Management
+10.255.209.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,D9 - Access Management
+10.255.210.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,D10 - Access Management
+10.255.211.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,D11 - Access Management
+10.255.212.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,D12 - Access Management
+10.255.213.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,D13 - Access Management
+10.255.214.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,D14 - Access Management
+10.255.215.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,D15 - Access Management
+10.255.216.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,D16 - Access Management
+10.255.217.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,G2 - Access Management
+10.255.248.0/24,NPFLAN,,npflan,npflan-datacenter,248,Active,Management Access Points,,DC - Wireless AP management
+10.255.251.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,E4 - Access Management
+10.255.252.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,E3 - Access Management
+10.255.253.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,E2 - Access Management
+10.255.254.0/24,NPFLAN,,npflan,npflan-access,193,Active,Management  Netværk,,E1 - Access Management
+10.255.255.0/24,NPFLAN,,npflan,,,Active,Management Loopback,,Loopback
+172.16.16.0/24,NPFLAN,,npflan,npflan-shop,1,Active,Shop,,Shoppen
+172.20.22.0/24,NPFLAN,,,npflan-datacenter,41,Active,Kubernetes nodes,,Kubernetes nodes
+192.168.0.0/16,NPFLAN,,npflan,,,Container,Link Net,,Distribution link net
+192.168.0.0/30,NPFLAN,,npflan,,,Active,Link Net,,Core1 - D1
+192.168.0.16/30,NPFLAN,,npflan,,,Active,Link Net,,D1 - D2
+192.168.0.32/30,NPFLAN,,npflan,,,Active,Link Net,,D2 - D3
+192.168.0.48/30,NPFLAN,,npflan,,,Active,Link Net,,D3 - Core2
+192.168.0.64/30,NPFLAN,,npflan,,,Active,Link Net,,Core1 - D4
+192.168.0.80/30,NPFLAN,,npflan,,,Active,Link Net,,D4 - D5
+192.168.0.96/30,NPFLAN,,npflan,,,Active,Link Net,,D5 - D6
+192.168.0.112/30,NPFLAN,,npflan,,,Active,Link Net,,D6 - Core2
+192.168.0.128/30,NPFLAN,,npflan,,,Active,Link Net,,Core1 - D7
+192.168.0.144/30,NPFLAN,,npflan,,,Active,Link Net,,D7 - D8
+192.168.0.160/30,NPFLAN,,npflan,,,Active,Link Net,,D8 - D9
+192.168.0.176/30,NPFLAN,,npflan,,,Active,Link Net,,D9 - Core2
+192.168.0.192/30,NPFLAN,,npflan,,,Active,Link Net,,Core1 - D10
+192.168.0.208/30,NPFLAN,,npflan,,,Active,Link Net,,D10 - D11
+192.168.0.224/30,NPFLAN,,npflan,,,Active,Link Net,,D11 - D12
+192.168.0.240/30,NPFLAN,,npflan,,,Active,Link Net,,D12 - Core2
+192.168.1.0/30,NPFLAN,,npflan,,,Active,Link Net,,Core1 - D13
+192.168.1.16/30,NPFLAN,,npflan,,,Active,Link Net,,D13 - D14
+192.168.1.32/30,NPFLAN,,npflan,,,Active,Link Net,,D14 - Core2
+192.168.1.48/30,NPFLAN,,npflan,,,Active,Link Net,,Core1 - D15
+192.168.1.64/30,NPFLAN,,npflan,,,Active,Link Net,,D15 - D16
+192.168.1.80/30,NPFLAN,,npflan,,,Active,Link Net,,D16 - Core2
+192.168.1.112/30,NPFLAN,,npflan,,,Active,Link Net,,Core1 - G2
+192.168.1.116/30,NPFLAN,,npflan,,,Active,Link Net,,Core1 - G2
+192.168.1.120/30,NPFLAN,,npflan,,,Active,Link Net,,G2 - Core2
+192.168.1.124/30,NPFLAN,,npflan,,,Active,Link Net,,G2 - Core2
+192.168.255.112/30,NPFLAN,,npflan,,,Active,Link Net,,E4 - Core2
+192.168.255.128/30,NPFLAN,,npflan,,,Active,Link Net,,E3 - E4
+192.168.255.144/30,NPFLAN,,npflan,,,Active,Link Net,,E2 - E3
+192.168.255.160/30,NPFLAN,,npflan,,,Active,Link Net,,E1 - E2
+192.168.255.176/30,NPFLAN,,npflan,,,Active,Link Net,,Core1 - E1
+192.168.255.180/30,NPFLAN,,npflan,,,Active,Link Net,,Core1 - E1
+192.168.255.184/30,NPFLAN,,npflan,,,Active,Link Net,,Core1 - E1
+192.168.255.188/30,NPFLAN,,npflan,,,Active,Link Net,,Core1 - E1
+192.168.255.208/30,NPFLAN,,npflan,,,Active,Link Net,,Core1 - Core2
+192.168.255.212/30,NPFLAN,,npflan,,,Active,Link Net,,Core1 - Core2
+192.168.255.240/30,NPFLAN,,npflan,,,Active,Link Net,,Core1 - S1
+192.168.255.244/30,NPFLAN,,npflan,,,Active,Link Net,,CORE1 - S2
+192.168.255.248/30,NPFLAN,,npflan,,,Active,Link Net,,S2 - S3
+192.168.255.252/30,NPFLAN,,npflan,,,Active,Link Net,,S3 - CORE2

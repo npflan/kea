@@ -9,7 +9,7 @@ import json
 
 
 def subnet(row):
-    if row['role'].casefold() not in ['access', 'wireless', 'management  netværk', 'management netværk', 'cctv']:
+    if row['role'].casefold() not in ['access', 'wireless', 'management  netværk', 'management netværk', 'cctv','management access points', 'environment']:
         return
     if row['description'].casefold() in ['wireless networks']:
         return
