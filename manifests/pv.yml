@@ -21,7 +21,7 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - baptiste
+          - k8s-worker03
 ---
 apiVersion: v1
 kind: PersistentVolume
@@ -46,4 +46,4 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - brigitte
+          - k8s-worker13
