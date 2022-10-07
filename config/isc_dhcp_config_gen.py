@@ -9,11 +9,11 @@ import json
 
 
 def subnet(row):
-    if row['role'].casefold() not in ['access', 'wireless', 'management  netværk', 'management netværk', 'cctv','management access points', 'environment']:
+    if row['Role'].casefold() not in ['access', 'wireless', 'management  netværk', 'management netværk', 'cctv','management access points', 'environment']:
         return
-    if row['description'].casefold() in ['wireless networks']:
+    if row['Description'].casefold() in ['wireless networks']:
         return
-    ip = ipaddress.IPv4Network(row['prefix'])
+    ip = ipaddress.IPv4Network(row['Prefix'])
 
     poolstart = 4
     if ip.subnet_of(ipaddress.IPv4Network('10.255.0.0/16')) or \
