@@ -104,6 +104,7 @@ data:
           "valid-lifetime": 10800,
           "renew-timer": 3600,
           "rebind-timer": 7200,
+          <?include "/kea/config/ap-options.conf"?>,
           <?include "/kea/subnet/subnet.conf"?>,
           "lease-database": {
             "type": "memfile",
