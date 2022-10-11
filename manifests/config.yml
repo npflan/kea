@@ -208,7 +208,7 @@ data:
             "code":       241,
             "space":      "vendor-encapsulated-options-space",
             "csv-format": true,
-            "data":       "10.255.193.101"
+            "data":       "10.248.255.11"
           },
           {
             "name": "vendor-encapsulated-options"
