@@ -4422,7 +4422,143 @@ data:
         "data": "10.255.254.1"
        }
       ]
-     }
+     },
+     {
+      "subnet": "10.18.11.0/24",
+      "pools": [
+      {
+        "pool": "10.18.11.4-10.18.11.250"
+      }
+      ],
+      "relay": {
+      "ip-address": "10.18.11.1"
+      },
+      "option-data": [
+      {
+        "name": "routers",
+        "data": "10.18.11.1"
+      }
+      ]
+    },
+    {
+      "subnet": "10.18.12.0/24",
+      "pools": [
+      {
+        "pool": "10.18.12.4-10.18.12.250"
+      }
+      ],
+      "relay": {
+      "ip-address": "10.18.12.1"
+      },
+      "option-data": [
+      {
+        "name": "routers",
+        "data": "10.18.12.1"
+      }
+      ]
+    },
+    {
+      "subnet": "10.18.13.0/24",
+      "pools": [
+      {
+        "pool": "10.18.13.4-10.18.13.250"
+      }
+      ],
+      "relay": {
+      "ip-address": "10.18.13.1"
+      },
+      "option-data": [
+      {
+        "name": "routers",
+        "data": "10.18.13.1"
+      }
+      ]
+    },
+    {
+      "subnet": "10.18.14.0/24",
+      "pools": [
+      {
+        "pool": "10.18.14.4-10.18.14.250"
+      }
+      ],
+      "relay": {
+      "ip-address": "10.18.14.1"
+      },
+      "option-data": [
+      {
+        "name": "routers",
+        "data": "10.18.14.1"
+      }
+      ]
+    },
+    {
+      "subnet": "10.18.15.0/24",
+      "pools": [
+      {
+        "pool": "10.18.15.4-10.18.15.250"
+      }
+      ],
+      "relay": {
+      "ip-address": "10.18.15.1"
+      },
+      "option-data": [
+      {
+        "name": "routers",
+        "data": "10.18.15.1"
+      }
+      ]
+    },
+    {
+      "subnet": "10.18.16.0/24",
+      "pools": [
+      {
+        "pool": "10.18.16.4-10.18.16.250"
+      }
+      ],
+      "relay": {
+      "ip-address": "10.18.16.1"
+      },
+      "option-data": [
+      {
+        "name": "routers",
+        "data": "10.18.16.1"
+      }
+      ]
+    },
+    {
+      "subnet": "10.18.17.0/24",
+      "pools": [
+      {
+        "pool": "10.18.17.4-10.18.17.250"
+      }
+      ],
+      "relay": {
+      "ip-address": "10.18.17.1"
+      },
+      "option-data": [
+      {
+        "name": "routers",
+        "data": "10.18.17.1"
+      }
+      ]
+    },
+    {
+      "subnet": "10.18.18.0/24",
+      "pools": [
+      {
+        "pool": "10.18.18.4-10.18.18.250"
+      }
+      ],
+      "relay": {
+      "ip-address": "10.18.18.1"
+      },
+      "option-data": [
+      {
+        "name": "routers",
+        "data": "10.18.18.1"
+      }
+      ]
+    }
     ]
 kind: ConfigMap
 metadata:
