@@ -212,6 +212,7 @@ metadata:
 spec:
   type: NodePort
   externalTrafficPolicy: Local
+  internalTrafficPolicy: Local
   clusterIP: 10.96.6.1
   selector:
     app: dhcp-primary
@@ -235,6 +236,7 @@ metadata:
 spec:
   type: NodePort
   externalTrafficPolicy: Local
+  internalTrafficPolicy: Local
   clusterIP: 10.96.6.2
   selector:
     app: dhcp-secondary
