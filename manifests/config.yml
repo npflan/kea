@@ -15,9 +15,9 @@ data:
               "data": "10.96.5.1, 10.96.5.2"
             }
           ],
-          "valid-lifetime": 86400,
-          "renew-timer": 43200,
-          "rebind-timer": 64800,
+          "valid-lifetime": 10800,
+          "renew-timer": 3600,
+          "rebind-timer": 7200,
           <?include "/kea/config/ap-options.conf"?>,
           <?include "/kea/subnet/subnet.conf"?>,
           "lease-database": {
@@ -101,9 +101,9 @@ data:
               "data": "10.96.5.1, 10.96.5.2"
             }
           ],
-          "valid-lifetime": 86400,
-          "renew-timer": 43200,
-          "rebind-timer": 64800,
+          "valid-lifetime": 10800,
+          "renew-timer": 3600,
+          "rebind-timer": 7200,
           <?include "/kea/config/ap-options.conf"?>,
           <?include "/kea/subnet/subnet.conf"?>,
           "lease-database": {
